@@ -46,10 +46,23 @@
             android:layout_height="wrap_content"
             android:text="HOORAY!!" />
 
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="0"
+            android:buttonTint="#594242"
+            android:drawableTint="#C19C9C"
+            android:filterTouchesWhenObscured="true"
+            android:foregroundTint="#EFE2E2"
+            android:splitTrack="false"
+            android:text="Frosting" />
+
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
             android:text="yay..." />
 
     </LinearLayout>
