@@ -40,30 +40,61 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HOORAY!!" />
+            android:orientation="vertical">
 
-        <Switch
-            android:id="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_weight="0"
-            android:buttonTint="#594242"
-            android:drawableTint="#C19C9C"
-            android:filterTouchesWhenObscured="true"
-            android:foregroundTint="#EFE2E2"
-            android:splitTrack="false"
-            android:text="Frosting" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many candles?" />
 
-        <Button
-            android:id="@+id/button2"
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:text="yay..." />
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Frosting" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Candles" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="BLOW OUT" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GOODBYE" />
+
+        </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>
